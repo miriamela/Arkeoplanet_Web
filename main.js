@@ -6,7 +6,7 @@ const closeIcon1 = document.querySelector(".js-closeIcon1");
 
 for (let i = 0; i < card1.length; i++) {
   card1[i].addEventListener("click", function () {
-    hiddenSection.classList.toggle("hidden");
+    hiddenSection.classList.toggle("hideCard");
     // hiddenSection.classList.remove("animationExit");
     hiddenSection.classList.toggle("animationEntrance");
   });
@@ -14,7 +14,7 @@ for (let i = 0; i < card1.length; i++) {
 function closeSection() {
   hiddenSection.classList.remove("animationEntrance");
   // hiddenSection.classList.add("animationExit");
-  hiddenSection.classList.add("hidden");
+  hiddenSection.classList.add("hideCard");
 }
 
 closeIcon1.addEventListener("click", closeSection);
@@ -25,13 +25,13 @@ const closeIcon2 = document.querySelector(".js-closeIcon2");
 
 for (let i = 0; i < card2.length; i++) {
   card2[i].addEventListener("click", function () {
-    hiddenSection2.classList.toggle("hidden");
+    hiddenSection2.classList.toggle("hideCard");
     hiddenSection2.classList.toggle("animationEntrance");
   });
 }
 
 function closeSection2() {
   hiddenSection2.classList.remove("animationEntrance");
-  hiddenSection2.classList.toggle("hidden");
+  hiddenSection2.classList.toggle("hideCard");
 }
 closeIcon2.addEventListener("click", closeSection2);

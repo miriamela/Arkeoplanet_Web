@@ -14,8 +14,6 @@
   background-color: black;
   color: white;
 }
-.title {
-}
 /* ARTICLE 2*/
 .article1 {
   overflow: scroll;
@@ -74,7 +72,7 @@
   width: 50%;
   padding: 3%;
 }
-input {
+.moreInfo {
   cursor: pointer;
 }
 .closeIcon {
@@ -105,7 +103,7 @@ input {
   grid-column: 4;
 }
 
-.hidden {
+.hideCard {
   display: none;
 }
 .animationEntrance {
